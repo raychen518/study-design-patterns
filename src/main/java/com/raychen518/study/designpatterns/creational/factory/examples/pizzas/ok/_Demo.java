@@ -15,9 +15,6 @@ public class _Demo {
 		System.out.println();
 
 		pizzaStore.orderPizza(PizzaStore.PIZZA_TYPE_CLAM);
-		System.out.println();
-
-		pizzaStore.orderPizza(PizzaStore.PIZZA_TYPE_GREEK);
 	}
 
 }

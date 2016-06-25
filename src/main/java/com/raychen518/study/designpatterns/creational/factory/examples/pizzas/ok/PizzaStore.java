@@ -6,7 +6,6 @@ public class PizzaStore {
 	public static final int PIZZA_TYPE_PEPPER_ONION = 2;
 	public static final int PIZZA_TYPE_VEGGIE = 3;
 	public static final int PIZZA_TYPE_CLAM = 4;
-	public static final int PIZZA_TYPE_GREEK = 5;
 
 	SimplePizzaFactory pizzaFactory;
 

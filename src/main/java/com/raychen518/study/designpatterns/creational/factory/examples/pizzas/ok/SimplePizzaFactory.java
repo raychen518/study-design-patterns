@@ -22,10 +22,6 @@ public class SimplePizzaFactory {
 			pizza = new ClamPizza();
 			break;
 
-		case PizzaStore.PIZZA_TYPE_GREEK:
-			pizza = new GreekPizza();
-			break;
-
 		default:
 			pizza = null;
 			break;
