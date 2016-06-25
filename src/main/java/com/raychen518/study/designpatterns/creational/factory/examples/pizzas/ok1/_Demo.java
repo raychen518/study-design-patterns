@@ -1,9 +1,14 @@
-package com.raychen518.study.designpatterns.creational.factory.examples.pizzas.ok;
+package com.raychen518.study.designpatterns.creational.factory.examples.pizzas.ok1;
 
+/**
+ * <pre>
+ * Moved the pizza creation to a pizza factory.
+ * </pre>
+ */
 public class _Demo {
 
 	public static void main(String[] args) {
-		PizzaStore pizzaStore = new PizzaStore(new SimplePizzaFactory());
+		PizzaStore pizzaStore = new PizzaStore(new PizzaFactory());
 
 		pizzaStore.orderPizza(PizzaStore.PIZZA_TYPE_CHEESE);
 		System.out.println();
@@ -12,9 +17,6 @@ public class _Demo {
 		System.out.println();
 
 		pizzaStore.orderPizza(PizzaStore.PIZZA_TYPE_VEGGIE);
-		System.out.println();
-
-		pizzaStore.orderPizza(PizzaStore.PIZZA_TYPE_CLAM);
 	}
 
 }

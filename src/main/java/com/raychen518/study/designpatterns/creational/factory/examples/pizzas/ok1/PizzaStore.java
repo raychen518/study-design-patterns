@@ -1,15 +1,14 @@
-package com.raychen518.study.designpatterns.creational.factory.examples.pizzas.ok;
+package com.raychen518.study.designpatterns.creational.factory.examples.pizzas.ok1;
 
 public class PizzaStore {
 
 	public static final int PIZZA_TYPE_CHEESE = 1;
 	public static final int PIZZA_TYPE_PEPPER_ONION = 2;
 	public static final int PIZZA_TYPE_VEGGIE = 3;
-	public static final int PIZZA_TYPE_CLAM = 4;
 
-	SimplePizzaFactory pizzaFactory;
+	PizzaFactory pizzaFactory;
 
-	public PizzaStore(SimplePizzaFactory pizzaFactory) {
+	public PizzaStore(PizzaFactory pizzaFactory) {
 		this.pizzaFactory = pizzaFactory;
 	}
 

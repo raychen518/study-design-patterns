@@ -1,6 +1,6 @@
-package com.raychen518.study.designpatterns.creational.factory.examples.pizzas.ok;
+package com.raychen518.study.designpatterns.creational.factory.examples.pizzas.ok1;
 
-public class SimplePizzaFactory {
+public class PizzaFactory {
 
 	public Pizza createPizza(int pizzaType) {
 		Pizza pizza;
@@ -16,10 +16,6 @@ public class SimplePizzaFactory {
 
 		case PizzaStore.PIZZA_TYPE_VEGGIE:
 			pizza = new VeggiePizza();
-			break;
-
-		case PizzaStore.PIZZA_TYPE_CLAM:
-			pizza = new ClamPizza();
 			break;
 
 		default:

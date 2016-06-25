@@ -12,9 +12,6 @@ public class _Demo {
 		System.out.println();
 
 		pizzaStore.orderPizza(PizzaStore.PIZZA_TYPE_VEGGIE);
-		System.out.println();
-
-		pizzaStore.orderPizza(PizzaStore.PIZZA_TYPE_CLAM);
 	}
 
 }

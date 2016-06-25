@@ -5,7 +5,6 @@ public class PizzaStore {
 	public static final int PIZZA_TYPE_CHEESE = 1;
 	public static final int PIZZA_TYPE_PEPPER_ONION = 2;
 	public static final int PIZZA_TYPE_VEGGIE = 3;
-	public static final int PIZZA_TYPE_CLAM = 4;
 
 	public Pizza orderPizza(int pizzaType) {
 		Pizza pizza;
@@ -21,10 +20,6 @@ public class PizzaStore {
 
 		case PIZZA_TYPE_VEGGIE:
 			pizza = new VeggiePizza();
-			break;
-
-		case PIZZA_TYPE_CLAM:
-			pizza = new ClamPizza();
 			break;
 
 		default:
