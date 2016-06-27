@@ -9,8 +9,6 @@ package com.raychen518.study.designpatterns.creational.factory;
  * but lets the subclasses decide which class to instantiate.
  * That is to say, the Factory Method pattern lets a class defer instantiation to its subclasses.
  * 
- * The Xxx pattern is often used to ....
- * 
  * The Factory Method pattern is also known as the Virtual Constructor pattern.
  * 
  * =================

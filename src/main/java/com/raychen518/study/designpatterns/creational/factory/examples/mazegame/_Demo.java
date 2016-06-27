@@ -2,7 +2,7 @@ package com.raychen518.study.designpatterns.creational.factory.examples.mazegame
 
 /**
  * <pre>
- * Creator				: MazeGame
+ * Creator				: MazeGame (the factory method: makeRoom())
  * SomeObject			: Room
  * ConcreteCreator		: OrdinaryMazeGame, MagicMazeGame
  * ConcreteSomeObject	: OrdinaryRoom, MagicRoom
