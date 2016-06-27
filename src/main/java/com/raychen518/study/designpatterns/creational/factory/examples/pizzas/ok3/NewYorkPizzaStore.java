@@ -12,7 +12,7 @@ public class NewYorkPizzaStore extends PizzaStore {
 			break;
 
 		case PizzaStore.PIZZA_TYPE_PEPPER_ONION:
-			pizza = new NewYorkPepperOnionPizza();
+			pizza = new NewYorkPepperoniPizza();
 			break;
 
 		case PizzaStore.PIZZA_TYPE_VEGGIE:

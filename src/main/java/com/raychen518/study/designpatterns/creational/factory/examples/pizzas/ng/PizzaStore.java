@@ -15,7 +15,7 @@ public class PizzaStore {
 			break;
 
 		case PIZZA_TYPE_PEPPER_ONION:
-			pizza = new PepperOnionPizza();
+			pizza = new PepperoniPizza();
 			break;
 
 		case PIZZA_TYPE_VEGGIE:

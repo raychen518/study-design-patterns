@@ -12,7 +12,7 @@ public class CalifoniaPizzaFactory extends PizzaFactory {
 			break;
 
 		case PizzaStore.PIZZA_TYPE_PEPPER_ONION:
-			pizza = new CalifoniaPepperOnionPizza();
+			pizza = new CalifoniaPepperoniPizza();
 			break;
 
 		case PizzaStore.PIZZA_TYPE_VEGGIE:
