@@ -5,11 +5,11 @@ package com.raychen518.study.designpatterns._template;
  * =================
  * Brief
  * =================
- * The Xxx pattern defines a ....
+ * The {PATTERN_NAME} pattern defines a ....
  * 
- * The Xxx pattern is often used to ....
+ * The {PATTERN_NAME} pattern is often used to ....
  * 
- * The Xxx pattern is also known as the Xxx pattern.
+ * The {PATTERN_NAME} pattern is also known as the Xxx pattern.
  * 
  * =================
  * Structure
@@ -56,10 +56,10 @@ package com.raychen518.study.designpatterns._template;
  * =================
  * References
  * =================
- * Wikipedia - Software Design Patterns - Xxx Pattern
+ * Wikipedia - Software Design Patterns - {PATTERN_NAME} Pattern
  * https://en.wikipedia.org/wiki/Xxx_pattern
  * 
- * Wikibooks - Computer Science Design Patterns - Xxx Pattern
+ * Wikibooks - Computer Science Design Patterns - {PATTERN_NAME} Pattern
  * https://en.wikibooks.org/wiki/Computer_Science_Design_Patterns/Xxx
  * </pre>
  */
