@@ -9,7 +9,7 @@ package com.raychen518.study.designpatterns._template;
  * 
  * The Xxx pattern is often used to ....
  * 
- * The Xxx pattern is also known as the Xxx pattern or the Xxx pattern.
+ * The Xxx pattern is also known as the Xxx pattern.
  * 
  * =================
  * Structure

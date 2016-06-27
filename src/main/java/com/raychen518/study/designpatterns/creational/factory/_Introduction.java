@@ -5,44 +5,44 @@ package com.raychen518.study.designpatterns.creational.factory;
  * =================
  * Brief
  * =================
- * The Xxx pattern defines a ....
+ * The Factory Method pattern defines an interface for creating an object,
+ * but lets the subclasses decide which class to instantiate.
+ * That is to say, the Factory Method pattern lets a class defer instantiation to its subclasses.
  * 
  * The Xxx pattern is often used to ....
  * 
- * The Xxx pattern is also known as the Xxx pattern or the Xxx pattern.
+ * The Factory Method pattern is also known as the Virtual Constructor pattern.
  * 
  * =================
  * Structure
  * =================
- * 		| Xxx							|											| Xxx					|
- * 		|-------------------------------|											|-----------------------|
- * 		| xxx(...)						|											| xxx(...)				|
- * 		| xxx(...)						|														|
- * 						|																		|
- * 						|									|-----------------------------------|-----------------------------------|
- * 						|									|									|									|
- * 		| ConcreteXxx					|		| ConcretXxxA			|			| ConcreteXxxB			|			| ConcreteXxxC			|
- * 		|-------------------------------|		|-----------------------|			|-----------------------|			|-----------------------|
- * 		| ...							|		| xxx(...)				|			| xxx(...)				|			| xxx(...)				|
- * 						|									|									|									|
- * 						|									|-----------------------------------|-----------------------------------|
- * 						|																		|
- * 						| [.........]												  [.......] |
- * 						|------>----------------------------------------------------------<-----|
+ * 		| Creator						|			|--------->---------| SomeObject					|
+ * 		|-------------------------------|			|					|-------------------------------|
+ * 		| createSomeObject(...)			|----->-----|					| ...							|
+ * 						+																+
+ * 						| Subclassing													| Subclassing
+ * 						|																|
+ * 		| ConcreteCreatorA				|			|--------->---------| ConcreteSomeObjectA			|
+ * 		| ConcreteCreatorB				|			|--------->---------| ConcreteSomeObjectB			|
+ * 		| ConcreteCreatorC				|			|--------->---------| ConcreteSomeObjectC			|
+ * 		| ...							|			|--------->---------| ...							|
+ * 		|-------------------------------|			|					|-------------------------------|
+ * 		| createSomeObject(...)			|----->-----|					| ...							|
  * 
- * Xxx (Interface)
- * - Provide an interface to ....
+ * Creator (Abstract Class or Interface)
+ * - Declare a factory method (createSomeObject(...)) to create an object (the method return type is SomeObject).
+ * - May define a default implementation of the factory method to create a default object (some ConcreteSomeObject object).
+ * - May call the factory method.
  * 
- * Xxx (Interface)
- * - Provide an interface to ....
+ * SomeObject (Abstract Class or Interface)
+ * - Define an interface of objects that the factory method in the Creator creates.
  * 
- * ConcreteXxx (Concrete Class)
- * - Implement the Xxx interface.
- * - .... 
+ * ConcreteCreator (Concrete Class)
+ * - Subclass the Creator.
+ * - Override the factory method to create an object (some ConcreteSomeObject object).
  * 
- * ConcreteXxx (Concrete Class)
- * - Implement the Xxx interface.
- * - .... 
+ * ConcreteSomeObject (Concrete Class)
+ * - Subclass the SomeObject.
  * 
  * =================
  * Application
@@ -56,17 +56,33 @@ package com.raychen518.study.designpatterns.creational.factory;
  * =================
  * References
  * =================
- * Wikipedia - Software Design Patterns - Xxx Pattern
- * https://en.wikipedia.org/wiki/Xxx_pattern
+ * Wikipedia - Software Design Patterns - Factory Method Pattern
+ * https://en.wikipedia.org/wiki/Factory_method_pattern
  * 
- * Wikibooks - Computer Science Design Patterns - Xxx Pattern
- * https://en.wikibooks.org/wiki/Computer_Science_Design_Patterns/Xxx
+ * Wikibooks - Computer Science Design Patterns - Factory Method Pattern
+ * https://en.wikibooks.org/wiki/Computer_Science_Design_Patterns/Factory_method
  * </pre>
  */
 public class _Introduction {
 
 	public static void main(String[] args) {
-		// ...
+		{
+			Creator creator = new ConcreteCreatorA();
+			System.out.println("creator.createSomeObject() instanceof ConcreteSomeObjectA: "
+					+ (creator.createSomeObject() instanceof ConcreteSomeObjectA));
+		}
+
+		{
+			Creator creator = new ConcreteCreatorB();
+			System.out.println("creator.createSomeObject() instanceof ConcreteSomeObjectB: "
+					+ (creator.createSomeObject() instanceof ConcreteSomeObjectB));
+		}
+
+		{
+			Creator creator = new ConcreteCreatorC();
+			System.out.println("creator.createSomeObject() instanceof ConcreteSomeObjectC: "
+					+ (creator.createSomeObject() instanceof ConcreteSomeObjectC));
+		}
 	}
 
 }
