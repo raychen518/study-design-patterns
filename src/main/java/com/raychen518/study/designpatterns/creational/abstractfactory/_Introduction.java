@@ -9,6 +9,9 @@ package com.raychen518.study.designpatterns.creational.abstractfactory;
  * 
  * The Abstract Factory pattern is also known as the Kit pattern.
  * 
+ * The Factory Method pattern is often used in the Abstract Factory pattern
+ * to implement the methods that are declared in the factory class/interface to create product objects.
+ * 
  * =================
  * Structure
  * =================
